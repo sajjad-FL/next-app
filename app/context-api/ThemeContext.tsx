@@ -9,6 +9,7 @@ interface StateType {
 type ColorActionType = {
     type: "CHANGE_THEME";
   };
+  
   type SizeActionType = {
     type: "CHANGE_FONTSIZE";
     payload: number;
