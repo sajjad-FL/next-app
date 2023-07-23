@@ -2,6 +2,7 @@ import axios, {AxiosResponse, AxiosError} from 'axios'
 import React from 'react'
 import User from '../components/User';
 import { IUsers } from '../types/types';
+import { emailQueue } from '../api/queues/route';
 
 const getRes = async () => {
   const url: string = 'https://jsonplaceholder.typicode.com/todos'

@@ -10,6 +10,7 @@ function Calls() {
 
     const headers = {
         'Api-Key': apiKey,
+        'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
         'Cookie': 'sessionid-20191028=n7pkcj6s76kbo8q8k54i3bppd6rphmca',
     };
