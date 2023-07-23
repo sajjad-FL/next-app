@@ -34,8 +34,10 @@ const Todo: React.FC<{}> = () => {
       const onChangeCheckbox = (formData: CheckboxState) => {
         console.log('Form data in App:', formData);
         // Perform any further actions or API calls based on the form data
-        // setCheckBoxData({name: formData.name, label: formData.label});
+        setCheckBoxData(checkboxData);
       };
+
+      console.log({checkboxData})
 
       const handleSubmit = () => {
 
