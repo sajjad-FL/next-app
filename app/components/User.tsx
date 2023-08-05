@@ -1,9 +1,8 @@
 "use client"
 import React, { useEffect } from 'react'
-import { IUsers } from '../types/types'
 import Link from 'next/link';
 
-function User(props: IUsers) {
+function User(props: any) {
     const handleClick = (e: React.MouseEvent<HTMLButtonElement>, id: number): void => {
         e.stopPropagation();
         console.log({id})

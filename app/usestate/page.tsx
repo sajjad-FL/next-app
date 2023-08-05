@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 
-interface IUser {
+interface IUsers {
     id: number,
     name: string,
     password: string
@@ -11,7 +11,7 @@ function Logged(): JSX.Element {
 
   const [name, setName] = useState<string>('');
   const [password, setPassword] = useState<string>('');
-  const [details, setDetails] = useState<IUser | null>(null)
+  const [details, setDetails] = useState<IUsers | null>(null)
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
      setName(e.target.value);
   }

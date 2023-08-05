@@ -1,22 +1,19 @@
-/********************************************************************************************************************** */
+/*
 
 // string
 let vara: string = "hello"; // Declaration of vara
 vara = "hi"; // Modification of the existing vara variable
 
 console.log(vara);  // Output: "hi"
-/********************************************************************************************************************** */
 
 // number
 let num: number = 10;
 console.log(num);
-/********************************************************************************************************************** */
 
 // boolean
 let isAdmin: boolean = true;
 console.log({isAdmin});
 
-/********************************************************************************************************************** */
 
 //// MULTIPLE TYPES (UNION TYPES) OR OPERATOR
 let testStringOrNumber: string | number;
@@ -24,7 +21,6 @@ let testStringOrNumber: string | number;
  testStringOrNumber = "hello";
  console.log({testStringOrNumber})
 
-/********************************************************************************************************************** */
 //  Array
 
 let strings: Array<string | number> = ['hello', 'world', 21];
@@ -39,7 +35,6 @@ console.log({arrayAny})
 let arrayMethod: (number | string)[] = ['string', 12]
 console.log({arrayMethod})
 
-/********************************************************************************************************************** */
 
 // Obect
 let user: {
@@ -67,7 +62,6 @@ user1 = {
 }
 
 console.log({user, user1})
-/********************************************************************************************************************** */
 
 // Functions
 function users(params:(string | number)[]): (number | string )[] {
@@ -83,7 +77,6 @@ function funObj(params: {name: string, age: number, id: number}): {name: string,
 
 console.log(funObj({name: "string", age: 10, id: 10}))
 
-/********************************************************************************************************************** */
 
 //// TYPE ALIASES
 
@@ -97,7 +90,7 @@ type UserType = {
     return user
   };
 
-  console.log(betterFunc());
+  // console.log(betterFunc());
 
   // interface
 
@@ -180,3 +173,5 @@ type UserType = {
     desc: 'desc',
     extra: [{id: 1, username: "ddd"}]
   }
+
+  */
